@@ -1,0 +1,8 @@
+java to class:
+javac -verbose -classpath ./jar2/*; Kafkahw.java
+
+class to jar:
+jar cvfm Kafkahw.jar Kafkamanifest.mf Kafkahw.class Kafkahw$AddSize.class
+
+run:
+java -jar Kafkahw.jar --brokers 192.168.10.2:11111 --topic chia --records 10000 --recordSize 1000
