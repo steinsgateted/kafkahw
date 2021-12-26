@@ -27,9 +27,9 @@ class Kafkahw{
     public static void getCmd(String[] args){
         try {
     	    brokers = args[1];
-	        topic = args[3];
-	        records = Integer. parseInt(args[5]);
-	        recordSize = Integer. parseInt(args[7]);
+	    topic = args[3];
+	    records = Integer. parseInt(args[5]);
+	    recordSize = Integer. parseInt(args[7]);
         }catch (Exception e) {
             state = false;
         }
