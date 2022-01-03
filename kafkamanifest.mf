@@ -1,4 +1,2 @@
 Main-Class: Kafkahw
-Class-Path: ./jar2/kafka-clients-2.0.0.jar ./jar2/slf4j-api-1.7.1.jar ./jar2/slf4j-simple-1.7.5.jar		
-
 

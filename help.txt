@@ -4,5 +4,10 @@ javac -verbose -classpath ./jar2/*; Kafkahw.java
 class to jar:
 jar cvfm Kafkahw.jar Kafkamanifest.mf Kafkahw.class Kafkahw$AddSize.class
 
-run:
+all jar(沒有用，多個jar檔包在一個jar好像沒用):
+jar cvfm Kafkahw.jar Kafkamanifest.mf Kafkahw.class Kafkahw$AddSize.class /*.jar
+
+# 把jar檔路徑解壓縮，拿出裡面的class
+jar cvfm Kafkahw.jar Kafkamanifest.mf Kafkahw.class Kafkahw$AddSize.class ./org/
+
 java -jar Kafkahw.jar --brokers 192.168.10.2:11111 --topic chia --records 10000 --recordSize 1000
